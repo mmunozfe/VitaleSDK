@@ -25,11 +25,11 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Miguel' => 'miguel.munoz@lolaturtle.com' }
-  s.source           = { :git => 'https://github.com/mmunozfe/VitaleSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/mmunozfe/VitaleSDK.git', :tag => "#{s.version}" }
   # s.social_media_url = 'https://twitter.com/mmunozfer'
-
-  s.ios.deployment_target = '10.0'
-  s.ios.vendored_frameworks = 'VitaleSDK.xcframework' # Your XCFramework
+  s.resource = 'VitaleSDK.xcframework'
+  s.ios.deployment_target = '11.0'
+  s.vendored_frameworks = 'VitaleSDK.xcframework' # Your XCFramework
   s.dependency 'Alamofire', '~> 4.9.0'
   s.dependency 'SwiftyJSON'
   s.dependency 'SwiftDate', '~> 4.5.1'
@@ -38,6 +38,7 @@ TODO: Add long description of the pod here.
   s.dependency 'YoutubePlayer-in-WKWebView', '~> 0.2.0'
   s.dependency 'HCVimeoVideoExtractor'
   s.dependency 'Instructions', '~> 1.3.1'
+  s.swift_version = "5.0"
 #  s.source_files = 'VitaleSDK/Classes/**/*'
   
   # s.resource_bundles = {
