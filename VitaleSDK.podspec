@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Miguel' => 'miguel.munoz@lolaturtle.com' }
-  s.source           = { :git => 'http://www.lolaturtle.com/VitaleSDK.zip', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/mmunozfe/VitaleSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/mmunozfer'
 
   s.ios.deployment_target = '10.0'
