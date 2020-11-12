@@ -1,0 +1,53 @@
+//
+//  Vitale.swift
+//  Vitale
+//
+//  Created by Miguel on 02/07/2020.
+//  Copyright © 2020 Vitale. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+public class Training{
+    public static let sharedInstance = Training()
+    private var client_id: String!
+    private var client_secret: String!
+    
+    public func start(with user: String, clientId: String, clientSecret: String){
+        client_id = clientId
+        client_secret = clientSecret
+        VitaleAuth.sharedInstance.start(with: user, client: clientId, secret: clientSecret)
+    }
+    
+    public func showSportProfile(){
+        SportProfileController.sharedInstance.getProfileController { (error, viewController) in
+            if error == nil{
+                if let topViewController = UIApplication.shared.keyWindow?.rootViewController{
+                    viewController?.modalPresentationStyle = .fullScreen
+                    topViewController.present(viewController!, animated: true, completion: nil)
+                }
+            }else{
+                
+            }
+        }
+    }
+    
+    public func setVitaleColor(color: UIColor){
+        Vitale.sharedInstance.setPrimaryColor(color: color)
+    }
+    
+    public func showVirtualPT(){
+        VitaleWorkoutController.sharedInstance.getVirtualController { (error, viewController) in
+            if error == nil{
+                if let topViewController = UIApplication.shared.keyWindow?.rootViewController{
+                    viewController?.modalPresentationStyle = .fullScreen
+                    topViewController.present(viewController!, animated: true, completion: nil)
+                }
+            }else{
+                
+            }
+        }
+    }
+    
+}
