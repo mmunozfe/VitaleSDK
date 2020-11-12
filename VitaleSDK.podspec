@@ -30,12 +30,12 @@ TODO: Add long description of the pod here.
   s.resource = 'VitaleSDK.xcframework'
   s.ios.deployment_target = '11.0'
   s.vendored_frameworks = 'VitaleSDK.xcframework' # Your XCFramework
-  s.dependency 'Alamofire', '~> 4.9.0'
+  s.dependency 'Alamofire'
   s.dependency 'SwiftyJSON'
-  s.dependency 'SwiftDate', '~> 4.5.1'
-  s.dependency 'Localize-Swift', '~> 2.0'
+  s.dependency 'SwiftDate'
+  s.dependency 'Localize-Swift'
   s.dependency 'FMDB'
-  s.dependency 'YoutubePlayer-in-WKWebView', '~> 0.2.0'
+  s.dependency 'YoutubePlayer-in-WKWebView'
   s.dependency 'HCVimeoVideoExtractor'
   s.dependency 'Instructions', '~> 1.3.1'
   s.swift_version = "5.0"
