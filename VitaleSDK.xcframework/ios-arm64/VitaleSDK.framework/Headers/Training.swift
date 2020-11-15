@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 public class Training{
+    
     public static let sharedInstance = Training()
     private var client_id: String!
     private var client_secret: String!
@@ -35,6 +36,19 @@ public class Training{
     
     public func setVitaleColor(color: UIColor){
         Vitale.sharedInstance.setPrimaryColor(color: color)
+    }
+    
+    public func setNavigationBarColor(color: UIColor){
+        Vitale.sharedInstance.setNavigationBarColor(color: color)
+    }
+    
+    public func setNavigationTintColor(color: UIColor){
+        Vitale.sharedInstance.setNavigationTintColor(color: color)
+    }
+    
+    
+    public func setNavigationImage(image: UIImage?){
+        Vitale.sharedInstance.setSmallLogo(logo: image)
     }
     
     public func showVirtualPT(){
