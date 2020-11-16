@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VitaleSDK'
-  s.version          = '0.3.0'
+  s.version          = '0.5.0'
   s.summary          = 'Intelligent, automatic, comprehensive, adaptive Training System'
 
 # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 VitaleSDK is a comprehensive intelligent, automatic, and adaptive training framework programmed in Swift for iOS and iPadOS. Is the most convenient way of integrating our physical activity training features with any third party.
                        DESC
 
-  s.homepage         = 'https://github.com/Miguel/VitaleSDK'
+  s.homepage         = 'https://github.com/mmunozfe/VitaleSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Miguel' => 'miguel.munoz@lolaturtle.com' }
