@@ -28,7 +28,7 @@ VitaleSDK is a comprehensive intelligent, automatic, and adaptive training frame
   s.source           = { :git => 'https://github.com/mmunozfe/VitaleSDK.git', :tag => "#{s.version}" }
   # s.social_media_url = 'https://twitter.com/mmunozfer'
   s.resource = 'VitaleSDK.xcframework'
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '9.0'
   s.vendored_frameworks = 'VitaleSDK.xcframework' # Your XCFramework
   s.dependency 'Alamofire'
   s.dependency 'SwiftyJSON'
