@@ -17,10 +17,6 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-VitaleSDK is a comprehensive intelligent, automatic, and adaptive training framework programmed in Swift for iOS and iPadOS. Is the most convenient way of integrating our physical activity training features with any third party.
-                       DESC
-
   s.homepage         = 'https://github.com/mmunozfe/VitaleSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
