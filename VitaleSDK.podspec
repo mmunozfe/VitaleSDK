@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/mmunozfe/VitaleSDK.git', :tag => "#{s.version}" }
   # s.social_media_url = 'https://twitter.com/mmunozfer'
   s.resource = 'VitaleSDK.xcframework'
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
   s.vendored_frameworks = 'VitaleSDK.xcframework' # Your XCFramework
   s.dependency 'Alamofire'
   s.dependency 'SwiftyJSON'
@@ -35,13 +35,5 @@ Pod::Spec.new do |s|
   s.dependency 'HCVimeoVideoExtractor'
   s.dependency 'Instructions', '~> 1.3.1'
   s.swift_version = "5.0"
-#  s.source_files = 'VitaleSDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'VitaleSDK' => ['VitaleSDK/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
