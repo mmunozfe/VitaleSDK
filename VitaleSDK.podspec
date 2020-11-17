@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VitaleSDK'
-  s.version          = '0.5.0'
+  s.version          = '0.6.0'
   s.summary          = 'Intelligent, automatic, comprehensive, adaptive Training System'
 
 # This description is used to generate tags and improve search results.
