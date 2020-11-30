@@ -20,6 +20,73 @@ it, simply add the following line to your Podfile:
 pod 'VitaleSDK'
 ```
 
+## Usage
+
+### Simple 1-line setup
+
+Utiliza las credenciales de MyVitale para inicializar el SDK. El user_id debe ser único y permanente para cada usuario de la app (puedes utilizar un identifacador que ya estés usando en tu sistema).
+
+```swift
+Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: client_secret)
+
+```
+
+### Sport profile
+
+```swift
+Training.sharedInstance.showSportProfile()
+
+```
+
+### Intelligent trainer
+
+
+```swift
+Training.sharedInstance.showVirtualPT()
+
+```
+
+### Custom configuration
+Puedes personalizar varios elementos de la interfaz del módulo de entrenamiento con las siguientes funciones.
+
+
+#### Primary color
+
+Puedes personalizar el color principal del SDK. Todos los botones y elementos principales del modulo de entrenamiento usarán este color.
+
+```swift
+Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: client_secret)
+
+```
+
+#### Navigation bar background color
+
+Personaliza el color de fondo de la navigationBar del módulo de entrenamiento. 
+
+```swift
+Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: client_secret)
+
+```
+
+#### Navigation bar background color
+
+Personaliza el tint color de la navigationBar del módulo de entrenamiento.
+
+```swift
+Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: client_secret)
+
+```
+
+#### Navigation bar logo
+
+Añade el logo de tu app al navigationBar.
+
+```swift
+Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: client_secret)
+
+```
+
+
 ## Author
 
 Miguel, miguel.munoz@lolaturtle.com
