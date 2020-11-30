@@ -55,7 +55,7 @@ Puedes personalizar varios elementos de la interfaz del módulo de entrenamiento
 Puedes personalizar el color principal del SDK. Todos los botones y elementos principales del modulo de entrenamiento usarán este color.
 
 ```swift
-Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: client_secret)
+	Training.sharedInstance.setMainColor(color: mainColor)
 
 ```
 
@@ -64,7 +64,7 @@ Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: 
 Personaliza el color de fondo de la navigationBar del módulo de entrenamiento. 
 
 ```swift
-Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: client_secret)
+        Training.sharedInstance.setNavigationBarColor(color: backgroundColor)
 
 ```
 
@@ -73,7 +73,7 @@ Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: 
 Personaliza el tint color de la navigationBar del módulo de entrenamiento.
 
 ```swift
-Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: client_secret)
+        Training.sharedInstance.setNavigationTintColor(color: tintColor)
 
 ```
 
@@ -82,7 +82,7 @@ Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: 
 Añade el logo de tu app al navigationBar.
 
 ```swift
-Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: client_secret)
+        Training.sharedInstance.setNavigationLogo(color: logo)
 
 ```
 
