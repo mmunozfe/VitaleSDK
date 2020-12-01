@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-public class Training{
+public class VitaleSDK{
     
-    public static let sharedInstance = Training()
+    public static let sharedInstance = VitaleSDK()
     private var client_id: String!
     private var client_secret: String!
     
