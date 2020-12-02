@@ -24,13 +24,15 @@ import YoutubePlayer_in_WKWebView
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class MyVitaleSDK {
-  public static let sharedInstance: VitaleSDK.MyVitaleSDK
+@_hasMissingDesignatedInitializers public class VitaleSDK {
+  public static let sharedInstance: VitaleSDK.VitaleSDK
   public func start(with user: Swift.String, clientId: Swift.String, clientSecret: Swift.String)
   public func showSportProfile()
   public func setVitaleColor(color: UIKit.UIColor)
   public func setNavigationBarColor(color: UIKit.UIColor)
   public func setNavigationTintColor(color: UIKit.UIColor)
+  public func setRegularFont(name: Swift.String)
+  public func setBoldFont(name: Swift.String)
   public func setNavigationImage(image: UIKit.UIImage?)
   public func showVirtualPT()
   @objc deinit

@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-public class MyVitaleSDK{
+public class VitaleSDK{
     
-    public static let sharedInstance = MyVitaleSDK()
+    public static let sharedInstance = VitaleSDK()
     private var client_id: String!
     private var client_secret: String!
     
@@ -46,6 +46,13 @@ public class MyVitaleSDK{
         Vitale.sharedInstance.setNavigationTintColor(color: color)
     }
     
+    public func setRegularFont(name: String){
+        Vitale.sharedInstance.setRegularFont(name)
+    }
+    
+    public func setBoldFont(name: String){
+        Vitale.sharedInstance.setBoldFont(name)
+    }
     
     public func setNavigationImage(image: UIImage?){
         Vitale.sharedInstance.setSmallLogo(logo: image)
