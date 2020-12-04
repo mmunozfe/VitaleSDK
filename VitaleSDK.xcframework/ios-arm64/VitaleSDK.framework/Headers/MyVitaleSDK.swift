@@ -21,19 +21,6 @@ public class MyVitaleSDK{
         VitaleAuth.sharedInstance.start(with: user, client: clientId, secret: clientSecret)
     }
     
-    public func showSportProfile(){
-        SportProfileController.sharedInstance.getProfileController { (error, viewController) in
-            if error == nil{
-                if let topViewController = UIApplication.shared.keyWindow?.rootViewController{
-                    viewController?.modalPresentationStyle = .fullScreen
-                    topViewController.present(viewController!, animated: true, completion: nil)
-                }
-            }else{
-                
-            }
-        }
-    }
-    
     public func setVitaleColor(color: UIColor){
         Vitale.sharedInstance.setPrimaryColor(color: color)
     }
@@ -46,20 +33,25 @@ public class MyVitaleSDK{
         Vitale.sharedInstance.setNavigationTintColor(color: color)
     }
     
-    public func setRegularFont(name: String){
-        Vitale.sharedInstance.setRegularFont(name)
-    }
-    
-    public func setBoldFont(name: String){
-        Vitale.sharedInstance.setBoldFont(name)
-    }
-    
     public func setNavigationImage(image: UIImage?){
         Vitale.sharedInstance.setSmallLogo(logo: image)
     }
     
     public func showVirtualPT(){
         VitaleWorkoutController.sharedInstance.getVirtualController { (error, viewController) in
+            if error == nil{
+                if let topViewController = UIApplication.shared.keyWindow?.rootViewController{
+                    viewController?.modalPresentationStyle = .fullScreen
+                    topViewController.present(viewController!, animated: true, completion: nil)
+                }
+            }else{
+                
+            }
+        }
+    }
+    
+    public func showSportProfile(){
+        SportProfileController.sharedInstance.getProfileController { (error, viewController) in
             if error == nil{
                 if let topViewController = UIApplication.shared.keyWindow?.rootViewController{
                     viewController?.modalPresentationStyle = .fullScreen
