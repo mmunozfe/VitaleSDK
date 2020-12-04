@@ -23,7 +23,7 @@ pod 'VitaleSDK'
 
 ### Simple 1-line setup
 
-Utiliza las credenciales de MyVitale para inicializar el SDK. El user_id debe ser único y permanente para cada usuario de la app (puedes utilizar cualquier identifacador de usuario que ya estés usando en tu sistema).
+Use your MyVitale credentials for initiating SDK. Your user_id must be permanent and unique for each App user (any user id, including the ones you are already using in your system,  can be used).
 
 ```swift
 Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: client_secret)
@@ -46,12 +46,12 @@ Training.sharedInstance.showVirtualPT()
 ```
 
 ### Custom configuration
-Puedes personalizar varios elementos de la interfaz del módulo de entrenamiento con las siguientes funciones.
+You can customize different PT module interfaces using this functions:
 
 
-#### Primary color
+#### Main color
 
-Puedes personalizar el color principal del SDK. Todos los botones y elementos principales del modulo de entrenamiento usarán este color.
+Main SDK colour can be personalized. All buttons and main elements of the PT module will turn the selected colour.
 
 ```swift
 Training.sharedInstance.setMainColor(color: mainColor)
@@ -60,16 +60,16 @@ Training.sharedInstance.setMainColor(color: mainColor)
 
 #### Navigation bar background color
 
-Personaliza el color de fondo de la navigationBar del módulo de entrenamiento. 
+Customize the NavigationBar background colour of the PT module.
 
 ```swift
 Training.sharedInstance.setNavigationBarColor(color: backgroundColor)
 
 ```
 
-#### Navigation bar background color
+#### Navigation tint color
 
-Personaliza el tint color de la navigationBar del módulo de entrenamiento.
+Customize the NavigationBar  tint colour of the PT module.
 
 ```swift
 Training.sharedInstance.setNavigationTintColor(color: tintColor)
@@ -78,7 +78,7 @@ Training.sharedInstance.setNavigationTintColor(color: tintColor)
 
 #### Navigation bar logo
 
-Añade el logo de tu app al navigationBar.
+Add your App’s logo to the navigationBar.
 
 ```swift
 Training.sharedInstance.setNavigationLogo(color: logo)
@@ -88,7 +88,7 @@ Training.sharedInstance.setNavigationLogo(color: logo)
 
 ## Author
 
-Miguel, miguel.munoz@lolaturtle.com
+MyVitale, info@myvitale.com
 
 ## License
 
