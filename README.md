@@ -19,6 +19,18 @@ it, simply add the following line to your Podfile:
 pod 'VitaleSDK'
 ```
 
+Add the following lines to the end of the podfile file
+
+```ruby
+post_install do |installer|
+installer.pods_project.targets.each do |target|
+target.build_configurations.each do |config|
+config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+end
+end
+end
+```
+
 ## Usage
 
 ### Simple 1-line setup
