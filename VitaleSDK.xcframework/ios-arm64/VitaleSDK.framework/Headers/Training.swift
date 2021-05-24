@@ -9,20 +9,14 @@
 import Foundation
 import UIKit
 
-public class Training{
+public class MyVitaleSDK{
     
-    public static let sharedInstance = Training()
+    public static let sharedInstance = MyVitaleSDK()
     private var client_id: String!
     private var client_secret: String!
     private var domain: String?
-
-    public func start(with user: String, clientId: String, clientSecret: String){
-        self.client_id = clientId
-        self.client_secret = clientSecret
-        VitaleAuth.sharedInstance.start(with: user, client: clientId, secret: clientSecret, domain: nil)
-    }
     
-    public func start(with user: String, clientId: String, clientSecret: String, domain: String){
+    public func start(with user: String, clientId: String, clientSecret: String, domain: String?){
         self.client_id = clientId
         self.client_secret = clientSecret
         self.domain = domain

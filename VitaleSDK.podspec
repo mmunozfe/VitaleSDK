@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VitaleSDK'
-  s.version          = '1.2'
+  s.version          = '1.3'
   s.summary          = 'Intelligent, automatic, comprehensive, adaptive Training System'
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Miguel Muñoz' => 'miguel.munoz@myvitale.com' }
   s.source           = { :git => 'https://github.com/mmunozfe/VitaleSDK.git', :tag => "#{s.version}" }
   # s.social_media_url = 'https://twitter.com/mmunozfer'
-  s.resource = 'VitaleSDK.xcframework'
+  # s.resource = 'VitaleSDK.xcframework'
   s.ios.deployment_target = '11.0'
   s.vendored_frameworks = 'VitaleSDK.xcframework' # Your XCFramework
   s.dependency 'Alamofire'
@@ -36,5 +36,6 @@ Pod::Spec.new do |s|
   s.dependency 'Instructions', '1.3.1'
   s.dependency 'Charts', '3.6.0'
   s.swift_version = "5.0"
+  s.xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
 end

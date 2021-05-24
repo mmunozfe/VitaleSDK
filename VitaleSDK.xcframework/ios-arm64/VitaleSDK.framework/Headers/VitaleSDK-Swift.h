@@ -214,16 +214,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
 @interface UILabel (SWIFT_EXTENSION(VitaleSDK))
 - (void)awakeFromNib;
 @end
 
 
 
-
 @interface UITextField (SWIFT_EXTENSION(VitaleSDK))
 - (void)awakeFromNib;
 @end
+
 
 
 

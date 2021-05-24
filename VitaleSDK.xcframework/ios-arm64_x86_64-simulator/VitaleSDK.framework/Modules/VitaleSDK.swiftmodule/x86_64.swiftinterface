@@ -28,10 +28,9 @@ import YoutubePlayer_in_WKWebView
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class Training {
-  public static let sharedInstance: VitaleSDK.Training
-  public func start(with user: Swift.String, clientId: Swift.String, clientSecret: Swift.String)
-  public func start(with user: Swift.String, clientId: Swift.String, clientSecret: Swift.String, domain: Swift.String)
+@_hasMissingDesignatedInitializers public class MyVitaleSDK {
+  public static let sharedInstance: VitaleSDK.MyVitaleSDK
+  public func start(with user: Swift.String, clientId: Swift.String, clientSecret: Swift.String, domain: Swift.String?)
   public func logout()
   public func setVitaleColor(color: Swift.String)
   public func setNavigationBarColor(color: Swift.String)
@@ -52,4 +51,7 @@ extension UILabel {
 }
 extension UIButton {
   @objc override dynamic open func awakeFromNib()
+}
+extension UIFont {
+  public static func jbs_registerFont(withFilenameString filenameString: Swift.String, bundle: Foundation.Bundle)
 }
