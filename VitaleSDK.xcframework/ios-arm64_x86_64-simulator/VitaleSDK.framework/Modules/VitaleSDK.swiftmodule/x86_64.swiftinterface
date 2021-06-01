@@ -39,8 +39,12 @@ import YoutubePlayer_in_WKWebView
   public func showVirtualPT()
   public func showSportProfile()
   public func showWearables()
+  public func showTrainingModule()
+  public func showNutritionModule()
   public func showStats()
   public func showTodaytraining()
+  public func getWearablesController(_ cb: @escaping ((UIKit.UIViewController?) -> ()))
+  public func getStatsController(_ cb: @escaping ((UIKit.UIViewController?) -> ()))
   @objc deinit
 }
 extension UITextField {

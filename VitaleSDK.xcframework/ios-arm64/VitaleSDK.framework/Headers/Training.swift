@@ -79,6 +79,24 @@ public class MyVitaleSDK{
         }
     }
     
+    public func showTrainingModule(){
+        VitaleWorkoutController.sharedInstance.getTraining { (viewController) in
+            if let topViewController = UIApplication.shared.keyWindow?.rootViewController{
+                viewController?.modalPresentationStyle = .fullScreen
+                topViewController.present(viewController!, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    public func showNutritionModule(){
+        VitaleWorkoutController.sharedInstance.getNutrition { (viewController) in
+            if let topViewController = UIApplication.shared.keyWindow?.rootViewController{
+                viewController?.modalPresentationStyle = .fullScreen
+                topViewController.present(viewController!, animated: true, completion: nil)
+            }
+        }
+    }
+    
     public func showStats(){
         VitaleWorkoutController.sharedInstance.getStats { (viewController) in
             if let topViewController = UIApplication.shared.keyWindow?.rootViewController{
@@ -100,5 +118,18 @@ public class MyVitaleSDK{
             }
         }
     }
+    
+    
+    public func getWearablesController( _ cb: @escaping ((_ controller: UIViewController?)->())){
+        let vc = WefitterViewController()
+        cb(vc)
+    }
+    
+    public func getStatsController( _ cb: @escaping ((_ controller: UIViewController?)->())){
+        let storyboard = UIStoryboard(name: "Stats", bundle: GlobalConfigs.VITALE_BUNDLE)
+        let vc = storyboard.instantiateViewController(withIdentifier: "StatsViewController")
+        cb(vc)
+    }
+    
     
 }
